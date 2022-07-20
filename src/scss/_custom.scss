@@ -1,0 +1,111 @@
+// Here you can add other styles
+
+@keyframes blink-gn {
+  from {
+    background-color: rgba(77, 189, 116, 0.2);
+  }
+
+  to {
+    background-color: rgba(77, 189, 116, 0.8);
+  }
+}
+
+@keyframes blink-red {
+  from {
+    background-color: rgba(220, 53, 29, 0.2);
+  }
+
+  to {
+    background-color: rgba(220, 53, 29, 0.6);
+  }
+}
+
+.blink-gn {
+  animation: blink-gn 3s ease-in infinite;
+}
+
+.blink-gn-fast {
+  animation: blink-gn 1s ease-in infinite;
+}
+
+.blink-red {
+  animation: blink-red 2s ease-in infinite;
+}
+
+/*Responsive*/
+.react-bs-table-container {
+  .react-bs-table table td,
+  .react-bs-table table th {
+    white-space: pre-line;
+    text-overflow: unset;
+    overflow-wrap: break-word;
+  }
+}
+
+.my-custom-class {
+  span {
+    width: -webkit-fill-available;
+  }
+}
+
+.ReactModalPortal {
+  .form-group {
+    .form-check-label {
+      color: "rgba(25,38,48,0.5)" !important;
+      margin: 0 !important;
+      width: auto !important;
+      float: none !important;
+      padding-right: 0% !important;
+      line-height: normal !important;
+      text-align: left !important;
+      font-weight: normal !important;
+    }
+  }
+}
+
+.customDatePicker {
+  .daterangepickercontainer {
+    div.daterangepicker {
+      position: relative !important;
+      min-width: fit-content !important;
+    }
+  }
+}
+
+.fromDateHourContainer {
+  .timeContainer {
+    display: none;
+  }
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: grey;
+}
+
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
